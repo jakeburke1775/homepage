@@ -1,3 +1,14 @@
 .webdev {
   background-color: aquamarine;
 }
+
+.webdev__skills-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.webdev__title {
+  text-align: center;
+}
