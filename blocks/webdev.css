@@ -1,14 +1,38 @@
 .webdev {
   /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.webdev__title {
+  margin: 32px;
 }
 
 .webdev__skills-list {
+  padding: 0;
+  margin: 0 auto 0;
+  max-width: 700px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 64px;
   justify-content: space-around;
   list-style: none;
 }
 
 .webdev__title {
   text-align: center;
+}
+
+@media screen and (max-width: 775px) {
+  .webdev__skills-list {
+    gap: 32px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .webdev__skills-list {
+    gap: 16px;
+  }
 }
