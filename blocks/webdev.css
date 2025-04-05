@@ -5,11 +5,11 @@
   justify-content: center;
 }
 
-.webdev__title {
+.title {
   margin: 32px;
+  text-align: center;
 }
-
-.webdev__skills-list {
+.skills-list {
   padding: 0;
   margin: 0 auto 0;
   max-width: 700px;
@@ -19,20 +19,18 @@
   gap: 64px;
   justify-content: space-around;
   list-style: none;
-}
-
-.webdev__title {
-  text-align: center;
+  color: #03befc;
 }
 
 @media screen and (max-width: 775px) {
-  .webdev__skills-list {
+  .skills-list {
     gap: 32px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .webdev__skills-list {
+  .skills-list {
     gap: 16px;
+    padding: 0 32px;
   }
 }
