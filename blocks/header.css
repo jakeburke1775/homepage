@@ -1,7 +1,57 @@
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
 .header__title {
   text-align: center;
+  font-size: 64px;
 }
 
 .header__subtitle {
   color: #03befc;
+  text-align: center;
+}
+
+.header__title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header__link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 64px;
+}
+
+.header__link {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+}
+
+.header__link:hover {
+  text-shadow: rgba(255, 120, 0, 0);
+}
+
+.header__link_linkedin {
+  background-image: url(../images/linkedin.png);
+}
+
+.header__link_git {
+  background-image: url(../images/github.png);
+}
+
+@media screen and (max-width: 600px) {
+  .header__title-container {
+    flex-direction: column;
+  }
+
+  .header__link-container {
+    justify-content: center;
+    gap: 64px;
+  }
 }

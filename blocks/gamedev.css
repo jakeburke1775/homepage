@@ -1,4 +1,5 @@
 .gamedev {
   /* background-color: aqua; */
-  /* visibility: hidden; */
+  visibility: hidden;
+  height: 64px;
 }

@@ -9,6 +9,15 @@
   margin: 32px;
   text-align: center;
 }
+
+.webdev__projects_subtitle {
+  padding-left: 32px;
+}
+
+.webdev__projects_list-container {
+  padding-left: 64px;
+}
+
 .skills-list {
   padding: 0;
   margin: 0 auto 0;
