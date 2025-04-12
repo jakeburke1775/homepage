@@ -1,12 +1,4 @@
 export const projects = {
-  Sh3lter: {
-    link: "https://00h00w.github.io/CodeJamJanuary/",
-    description:
-      "A collaboration during a code jam for TripleTen. Responsible for styling and responsiveness of the landing page.",
-    videoLink: "",
-    type: "web",
-    git: "https://github.com/00H00W/GameJam20251",
-  },
   Spots: {
     link: "https://jakeburke1775.github.io/se_project_spots/",
     description:
@@ -50,9 +42,25 @@ export const projects = {
   "Kingdom RTS Project": {
     link: "https://w00h00.itch.io/kingdom-rts-project/",
     description:
-      "Brackeys Game Jam entry with collaborative coding experience. Contributed art and music while team partner coded in Unity.",
+      "Brackeys Game Jam entry with collaborative coding experience. Contributed art and music while my friend, Sam, coded in Unity.",
     videoLink: "",
     type: "game",
+    git: "https://github.com/00H00W/GameJam20251",
+  },
+  "This Website": {
+    link: "https://github.com/jakeburke1775/homepage",
+    description:
+      "I listed all my projects in object format in components.js. I'm still learning how to structure so I'm just making things look nice at the moment.",
+    videoLink: "",
+    type: "web",
+    git: "https://github.com/jakeburke1775/homepage",
+  },
+  Sh3lter: {
+    link: "https://00h00w.github.io/CodeJamJanuary/",
+    description:
+      "A collaboration during a code jam for TripleTen. I was responsible for styling and responsiveness of the landing page. The github link is actually my friend and collaborator, Sam's. The API is currently not working but Sam can fix that or I can once I learn how to use APIs.",
+    videoLink: "",
+    type: "web",
     git: "https://github.com/00H00W/GameJam20251",
   },
 };

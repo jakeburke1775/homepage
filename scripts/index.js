@@ -37,16 +37,10 @@ function renderProjects() {
     <h3 class="projects__name">
         ${name}
         <div class="projects__links">
-          <a href="${
-            project.git || "#"
-          }" target="_blank" class="projects__link">
+          <a href="${project.git || "#"}"  class="projects__link"
+          onclick= "event.stopPropagation();">
             <img src="../images/github.png" class="git-link">
           </a>
-          <!-- Will add videos later
-          <a href="${
-            project.videoLink || "#"
-          }" target="_blank" class="projects__link">Video</a>
-          -->
         </div>
     </h3>
     <p class="projects__description">${project.description}</p>

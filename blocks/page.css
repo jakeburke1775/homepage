@@ -32,7 +32,7 @@
 
 .page__section {
   padding: 24px;
-  border: 1px dotted darkslategray;
+  border: 1px solid darkslategray;
   border-radius: 8px;
   background-color: black;
   margin: 8px;

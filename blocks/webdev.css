@@ -44,14 +44,16 @@
   gap: 32px;
 }
 
-.projects__name-link {
+/* .projects__name-link {
   color: rgb(255, 120, 0);
+  color: #03befc;
   text-decoration: none;
-}
+} */
 
 .projects__item {
   width: 100%;
-  border: 1px solid rgb(100, 100, 100);
+  border: 1px solid darkslategrey;
+  box-shadow: 0 5px 10px darkslategray;
   border-radius: 8px;
   padding: 16px;
   list-style: none;
@@ -64,6 +66,8 @@
 }
 
 .projects__name {
+  color: rgb(255, 120, 0);
+  color: #03befc;
   border-bottom: 1px dotted rgb(255, 120, 0);
   display: flex;
   flex-direction: row;
@@ -91,5 +95,11 @@
     gap: 16px;
     padding: 0 32px;
     max-width: 330px;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .projects__container {
+    padding: 0;
   }
 }
