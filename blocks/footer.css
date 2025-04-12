@@ -1,3 +1,35 @@
 .footer {
-  /* height: 64px; */
+  /* height: 128px; */
+}
+
+.footer__link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  margin: 64px;
+}
+
+.footer__link {
+  width: 32px;
+  height: 32px;
+  background-size: cover;
+}
+
+.footer__link:hover {
+  text-shadow: rgba(255, 120, 0, 0);
+}
+
+.footer__link_linkedin {
+  background-image: url(../images/linkedin.png);
+}
+
+.footer__link_git {
+  background-image: url(../images/github.png);
+}
+
+.footer__copyright {
+  text-align: center;
+  color: lightslategray;
 }

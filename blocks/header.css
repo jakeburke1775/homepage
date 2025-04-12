@@ -1,6 +1,7 @@
 .header {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .header__title {
@@ -11,6 +12,7 @@
 .header__subtitle {
   color: #03befc;
   text-align: center;
+  width: 70%;
 }
 
 .header__title-container {
@@ -19,35 +21,10 @@
   justify-content: space-around;
 }
 
-.header__link-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 64px;
-}
-
-.header__link {
-  width: 32px;
-  height: 32px;
-  background-size: cover;
-}
-
-.header__link:hover {
-  text-shadow: rgba(255, 120, 0, 0);
-}
-
-.header__link_linkedin {
-  background-image: url(../images/linkedin.png);
-}
-
-.header__link_git {
-  background-image: url(../images/github.png);
-}
-
-.about__desc {
-  width: 70%;
-  align-items: center;
+.header__desc {
   text-align: center;
-  margin: 16px auto;
+  align-items: center;
+  width: 70%;
+  font-size: 16px;
+  font-weight: 100;
 }
