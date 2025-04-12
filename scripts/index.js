@@ -40,7 +40,7 @@ function renderProjects() {
           <a href="${
             project.git || "#"
           }" target="_blank" class="projects__link">
-            <img src="/images/github.png" class="git-link">
+            <img src="../images/github.png" class="git-link">
           </a>
           <!-- Will add videos later
           <a href="${

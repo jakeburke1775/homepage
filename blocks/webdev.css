@@ -74,7 +74,7 @@
 .git-link {
   width: 24px;
   height: 24px;
-  background-image: url(/images/github.png);
+  background-image: url(../images/github.png);
   background-position: center;
   background-size: cover;
   border-color: rgb(255, 120, 0);
