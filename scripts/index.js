@@ -39,7 +39,7 @@ function renderProjects() {
         <div class="projects__links">
           <a href="${project.git || "#"}"  class="projects__link"
           onclick= "event.stopPropagation();">
-            <img src="../images/github.png" class="git-link">
+            <img src="./images/github.png" class="git-link">
           </a>
         </div>
     </h3>
