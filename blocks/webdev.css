@@ -1,4 +1,4 @@
-.webdev {
+.page__section {
   /* background-color: aquamarine; */
   display: flex;
   flex-direction: column;
@@ -14,13 +14,18 @@
   padding-left: 32px;
 }
 
-.webdev__projects_list-container {
-  padding-left: 64px;
+.projects__container {
+  padding: 0 64px;
+}
+
+.li_skill {
+  margin: 0;
+  list-style: none;
 }
 
 .skills-list {
   padding: 0;
-  margin: 0 auto 0;
+  margin: 0 auto 32px;
   max-width: 700px;
   display: flex;
   flex-direction: row;
@@ -31,15 +36,60 @@
   color: #03befc;
 }
 
-@media screen and (max-width: 775px) {
-  .skills-list {
-    gap: 32px;
+.projects__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.projects__name-link {
+  color: rgb(255, 120, 0);
+  text-decoration: none;
+}
+
+.projects__item {
+  width: 100%;
+  border: 1px solid rgb(100, 100, 100);
+  border-radius: 8px;
+  padding: 16px;
+  list-style: none;
+}
+
+.projects__item:hover {
+  border: 1px solid rgb(255, 120, 0);
+  box-shadow: 0 5px 10px rgba(255, 120, 0, 50%);
+  cursor: pointer;
+}
+
+.projects__name {
+  border-bottom: 1px dotted rgb(255, 120, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.git-link {
+  width: 24px;
+  height: 24px;
+  background-image: url(/images/github.png);
+  background-position: center;
+  background-size: cover;
+  border-color: rgb(255, 120, 0);
+}
+
+@media screen and (min-width: 1034px) {
+  .projects__item {
+    max-width: 300px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 835px) {
   .skills-list {
     gap: 16px;
     padding: 0 32px;
+    max-width: 330px;
   }
 }

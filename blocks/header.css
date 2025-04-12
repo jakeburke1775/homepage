@@ -15,14 +15,14 @@
 
 .header__title-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
 }
 
 .header__link-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 64px;
 }
@@ -45,13 +45,9 @@
   background-image: url(../images/github.png);
 }
 
-@media screen and (max-width: 600px) {
-  .header__title-container {
-    flex-direction: column;
-  }
-
-  .header__link-container {
-    justify-content: center;
-    gap: 64px;
-  }
+.about__desc {
+  width: 70%;
+  align-items: center;
+  text-align: center;
+  margin: 16px auto;
 }
