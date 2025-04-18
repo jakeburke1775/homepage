@@ -58,7 +58,7 @@ export const projects = {
   Sh3lter: {
     link: "https://00h00w.github.io/CodeJamJanuary/",
     description:
-      "A collaboration during a code jam for TripleTen. I was responsible for styling and responsiveness of the landing page. The github link is actually my friend and collaborator, Sam's. The API is currently not working but Sam can fix that or I can once I learn how to use APIs.",
+      "A collaboration during a code jam for TripleTen. I was responsible for styling and responsiveness of the landing page. The github link is actually my friend and collaborator, Sam's.",
     videoLink: "",
     type: "web",
     git: "https://github.com/00H00W/GameJam20251",
