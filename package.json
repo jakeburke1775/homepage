@@ -1,0 +1,22 @@
+{
+  "name": "homepage",
+  "version": "1.0.0",
+  "description": "my homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakeburke1775/homepage.git"
+  },
+  "author": "Jake B",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jakeburke1775/homepage/issues"
+  },
+  "homepage": "https://github.com/jakeburke1775/homepage#readme",
+  "dependencies": {
+    "jquery": "^3.7.1"
+  }
+}
