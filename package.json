@@ -4,7 +4,8 @@
   "description": "my homepage",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "dev": "live-server --port=3000 --ignore=node_modules --wait=500"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "homepage": "https://github.com/jakeburke1775/homepage#readme",
   "dependencies": {
     "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
   }
 }
