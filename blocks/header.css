@@ -7,6 +7,61 @@
 .header__title {
   text-align: center;
   font-size: 64px;
+  color: white;
+  transition: text-shadow 0.3s ease;
+}
+
+.header__title.neon-glow {
+  text-shadow: 
+    0 0 10px rgb(255, 120, 0),
+    0 0 20px rgb(255, 120, 0),
+    0 0 30px rgb(255, 120, 0),
+    0 0 40px rgb(255, 120, 0);
+}
+
+.header__title.flicker {
+  animation: neonFlicker 2s ease-out;
+}
+
+@keyframes neonFlicker {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow: 
+      0 0 10px rgb(255, 120, 0),
+      0 0 20px rgb(255, 120, 0),
+      0 0 30px rgb(255, 120, 0),
+      0 0 40px rgb(255, 120, 0);
+  }
+  5%, 20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+.header__title .letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.header__title .letter.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.header__title .space {
+  width: 0.3em;
+}
+
+@media screen and (max-width: 768px) {
+  .header__title {
+    font-size: 48px;
+  }
+  
+  .header__title .space {
+    display: block;
+    width: 100%;
+    height: 0;
+  }
 }
 
 .header__subtitle {

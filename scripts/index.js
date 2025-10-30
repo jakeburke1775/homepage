@@ -14,6 +14,9 @@ function renderProjects() {
   webDevContainer.innerHTML = "";
   gameDevContainer.innerHTML = "";
 
+  let webDevDelay = 0;
+  let gameDevDelay = 0;
+
   // Loop through projects and add them to the DOM
   Object.entries(projects).forEach(([name, project]) => {
     const projectItem = document.createElement("li");
@@ -46,14 +49,73 @@ function renderProjects() {
     <p class="projects__description">${project.description}</p>
     `;
 
-    // Append to the appropriate container
+    // Append to the appropriate container and animate
     if (project.type === "web") {
       webDevContainer.appendChild(projectItem);
+      // Staggered animation for web dev cards
+      setTimeout(() => {
+        projectItem.classList.add("animate-in");
+      }, webDevDelay);
+      webDevDelay += 150; // 150ms delay between each card
     } else if (project.type === "game") {
       gameDevContainer.appendChild(projectItem);
+      // Staggered animation for game dev cards
+      setTimeout(() => {
+        projectItem.classList.add("animate-in");
+      }, gameDevDelay);
+      gameDevDelay += 150; // 150ms delay between each card
     }
   });
 }
 
-// Execute the function when the DOM content is loaded
-document.addEventListener("DOMContentLoaded", renderProjects);
+// Function to animate title letters "Jake's Domain"
+function animateTitle() {
+  const titleElement = document.querySelector('.header__title');
+  const titleText = titleElement.textContent;
+  titleElement.innerHTML = '';
+
+  let letterCount = 0;
+
+  // Split text into letters and spaces
+  Array.from(titleText).forEach((char, index) => {
+    const span = document.createElement('span');
+    
+    if (char === ' ') {
+      span.classList.add('space');
+      span.innerHTML = '&nbsp;';
+    } else {
+      span.classList.add('letter');
+      span.textContent = char;
+      letterCount++; // Count actual letters (not spaces)
+    }
+    
+    titleElement.appendChild(span);
+    
+    // Animate each letter with staggered delay
+    if (char !== ' ') {
+      setTimeout(() => {
+        span.classList.add('animate-in');
+      }, index * 50); // 50ms delay between each letter
+    }
+  });
+
+  // Calculate when all letters finish animating
+  const totalAnimationTime = (titleText.length - 1) * 50 + 600; // last letter delay + animation duration
+  
+  // Start neon flicker after all letters finish
+  setTimeout(() => {
+    titleElement.classList.add('flicker');
+    
+    // After flicker animation ends, keep the glow permanently
+    setTimeout(() => {
+      titleElement.classList.remove('flicker');
+      titleElement.classList.add('neon-glow');
+    }, 1000); // flicker duration is 2s
+  }, totalAnimationTime);
+}
+
+// Execute the functions when the DOM content is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  animateTitle();
+  renderProjects();
+});

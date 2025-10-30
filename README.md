@@ -10,3 +10,6 @@ Current ToDos:
 - learning blog
 - game art and sounds
 - objects with list data
+
+- combine all projects into one section and add works done for others
+- add rolling cube in background with responsive lighting?
