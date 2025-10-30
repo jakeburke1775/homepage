@@ -1,5 +1,12 @@
 export const projects = {
-  Spots: {
+  "React Router Template": {
+    link: "https://jakeburke1775.github.io/react-vite-router-template/",
+    description: "A template for building React applications with React Router. All of my current projects are built using this template.",
+    videoLink: "",
+    type: "web",
+    git: "https://github.com/jakeburke1775/react-router-template",
+  },
+  "Spots": {
     link: "https://jakeburke1775.github.io/se_project_spots/",
     description:
       "A social media image-sharing website. Features include profile editing and photo management.",
@@ -10,7 +17,7 @@ export const projects = {
   "Coffee Shop": {
     link: "https://jakeburke1775.github.io/se_project_coffeeshop/",
     description:
-      "A landing page for a coffee shop. Introduced to forms through this project.",
+      "A landing page for a coffee shop.",
     videoLink: "",
     type: "web",
     git: "https://github.com/jakeburke1775/se_project_coffeeshop",
@@ -23,7 +30,7 @@ export const projects = {
     type: "web",
     git: "https://github.com/jakeburke1775/se_project_todo-app",
   },
-  "Cody Chameleon": {
+  "Tiny Chameleon": {
     link: "https://jakeburke1775.github.io/CodyChameleon/",
     description:
       "A prototype platformer built with Game Maker Studio 2. Includes a stylish container and plans for tongue mechanics to collect bugs, along with color-changing features for stealth.",
