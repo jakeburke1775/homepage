@@ -76,6 +76,9 @@ function animateTitle() {
 
   let letterCount = 0;
 
+  const baseDelay = 50; // 100ms per letter index
+  const randomDelayMax = 100; // 200ms max random delay
+
   // Split text into letters and spaces
   Array.from(titleText).forEach((char, index) => {
     const span = document.createElement('span');
@@ -95,12 +98,12 @@ function animateTitle() {
     if (char !== ' ') {
       setTimeout(() => {
         span.classList.add('animate-in');
-      }, index * 50); // 50ms delay between each letter
+      }, index * baseDelay + Math.floor(Math.random() * randomDelayMax)); // 100ms base + 0-200ms random offset
     }
   });
 
   // Calculate when all letters finish animating
-  const totalAnimationTime = (titleText.length - 1) * 50 + 600; // last letter delay + animation duration
+  const totalAnimationTime = (titleText.length - 1) * baseDelay + randomDelayMax + 600; // base delay + max random + animation duration
   
   // Start neon flicker after all letters finish
   setTimeout(() => {
