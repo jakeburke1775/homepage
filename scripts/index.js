@@ -1,5 +1,7 @@
 // Import the projects object
 import { projects } from "./components.js";
+// Import cache buster for immediate updates during development
+import { bustCache } from "./cache-buster.js";
 
 // Function to render projects to the DOM
 function renderProjects() {
@@ -119,6 +121,13 @@ function animateTitle() {
 
 // Execute the functions when the DOM content is loaded
 document.addEventListener("DOMContentLoaded", () => {
+  // Bust cache to ensure fresh assets during development
+  bustCache({ 
+    verbose: true, // Log cache busting actions to console
+    updateCSS: true,
+    updateJS: false // Don't bust the main script that's already loading
+  });
+  
   animateTitle();
   renderProjects();
 });
